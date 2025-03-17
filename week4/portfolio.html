@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .container {
+            margin: auto;
+            background-color: #ffffff;
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: -10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            cursor: pointer;
+            background-color: #74C69D;
+            margin: 10px;
+            padding-left: 120px;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 120px;
+        }
+
+        .section div {
+            padding: 16px;
+            color: white;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 19px;
+            cursor: pointer;
+        }
+
+        .content {
+            text-align: center;
+            justify-content: center;
+            margin-bottom: -200px;
+        }
+
+        .content h1 {
+            font-family: work sans;
+            font-size: 17px;
+            color: #74C69D;
+            letter-spacing: 5px;
+            margin-top: 40px;
+        }
+
+        .content h2 {
+            font-family: 'Crimson Text', serif;
+            font-size: 40px;
+            color: #000000;
+            margin-top: 20px;
+        }
+
+        .content p {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 18px;
+            color: #000000;
+            margin-top: -15px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 250px;
+
+        }
+
+        .portfolio-item {
+            flex: 1 1 calc(50% - 40px);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 20px;
+            border: #000000;
+
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo"><img src="Image/logo.png" width="150px"></div>
+
+            <div class="section">
+                <div>Home</div>
+                <div>Portfolio</div>
+                <div>Services</div>
+                <div>Contact</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>WORKS</h1>
+            <h2>Portfolio</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur<br>
+                adipisicing elit.</p>
+        </div>
+
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="Image/portfolio1.png" alt="Portfolio 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/portfolio2.png" alt="Portfolio 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/portfolio3.png" alt="Portfolio 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/portfolio4.png" alt="Portfolio 4">
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/portfolio5.png" alt="Portfolio 5">
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/portfolio6.png" alt="Portfolio 6">
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/portfolio7.png" alt="Portfolio 7">
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/portfolio8.png" alt="Portfolio 8">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
