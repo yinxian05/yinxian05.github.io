@@ -4,8 +4,8 @@
 <head>
     <title>Button</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
         .container {
             max-width: 1280px;
@@ -96,6 +96,7 @@
             text-align: center;
             background-color: #ffffff;
             padding: 50px 0;
+            margin-left: 35px;
         }
 
         .container1 h1 {
@@ -261,7 +262,7 @@
             justify-content: center;
             text-align: center;
             background-color: #ffffff;
-            padding: 50px 0;
+            padding: 30px 0;
         }
 
         .team {
@@ -270,6 +271,7 @@
             align-items: center;
             flex-direction: column;
             padding: 20px;
+            margin-left: 80px;
         }
 
         .team h1 {
@@ -278,6 +280,7 @@
             color: #74C69D;
             letter-spacing: 4px;
             text-align: center;
+            margin-top: 10px;
         }
 
         .team h2 {
@@ -297,16 +300,67 @@
             letter-spacing: normal;
             color: #222222;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             margin-top: 8px;
         }
 
         .team-members {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            gap: 20px;
-            padding: 20px;
+            padding: 0 130px;
+            margin-top: -10px;
+        }
+
+        .team-members div {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-shadow: 2px 4px 8px 3px rgba(130, 130, 130, 0.5);
+            border-radius: 10px;
+        }
+
+        .team-members div img {
+            padding: 10px 26px;
+            width: 125px;
+            margin-top: 12px;
+        }
+
+        .team-members div.info {
+            text-align: left;
+            box-shadow: none;
+            margin-top: -20px;
+        }
+
+        .team-members h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .team-members p {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 12px;
+            color: #848484;
+            font-weight: 380;
+            margin-top: -15px;
+        }
+
+        .viewteam {
+            display: block;
+            background-color: #2d2d2d;
+            color: #ffffff;
+            padding: 12px 40px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 70px;
+            margin-left: auto;
+            margin-right: auto;
+
         }
     </style>
 </head>
@@ -395,28 +449,30 @@
         <div class="Richard Guerra">
             <img src="Image/team2.png">
             <div class="info">
-                <h3>Jane Doe</h3>
-                <p>Designer</p>
+                <h3>Richard Guerra</h3>
+                <p>CTO</p>
             </div>
         </div>
 
         <div class="Alexandra Stolz">
             <img src="Image/team3.png">
             <div class="info">
-                <h3>John Smith</h3>
-                <p>Developer</p>
+                <h3>Alexandra Stolz</h3>
+                <p>DESIGNER</p>
             </div>
         </div>
 
         <div class="Janet Bray">
-            <img src="Image/team3.png">
+            <img src="Image/team4.png">
             <div class="info">
-                <h3>John Smith</h3>
-                <p>Developer</p>
+                <h3>Janet Bray</h3>
+                <p>DEVELOPER</p>
             </div>
         </div>
-
     </div>
+
+    <button class="viewteam">View Team</button>
+
 
 </body>
 
