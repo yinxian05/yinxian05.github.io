@@ -7,6 +7,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
         .container {
             margin: auto;
             background-color: #ffffff;
@@ -115,6 +116,71 @@
             font-weight: 350;
             letter-spacing: 1.2px;
             margin-right: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .container {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .section {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            .content {
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
+            .portfolio {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+                margin: 0 auto;
+            }
+
+            .portfolio-item {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .portfolio-item img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .footer {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 40px 60px;
+                background-color: #74C69D;
+                color: white;
+                margin-top: 70px;
+            }
+
+            .footer-social img {
+                padding: 0 10px;
+                cursor: pointer;
+            }
         }
     </style>
 </head>
