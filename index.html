@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Persona Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+        .container {
+            margin: auto;
+            background-color: #D4C9BE;
+            /* Removed stray closing brace */
+
+            .nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                cursor: pointer;
+            }
+
+            .social.media.logo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .social.media.logo div {
+                padding: 16px;
+                justify-content: space-between;
+            }
+
+            .logo img {
+                width: 100%;
+            }
+
+            .social.media.logo img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .content {
+                background-color: #171717;
+                justify-content: center;
+                text-align: center;
+                padding: 150px 0;
+            }
+
+            .profile {
+                margin-top: -80px;
+                margin-bottom: 40px;
+            }
+
+            .profile.pic img {
+                width: 220px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 20px auto;
+                display: block;
+            }
+
+            .profile h1 {
+                font-family: 'manrope', sans-serif;
+                font-size: 25px;
+                letter-spacing: 1px;
+                color: #F1EFEC;
+                margin-top: 40px;
+            }
+
+            .profile h2 {
+                font-family: 'Manrope', sans-serif;
+                font-size: 20px;
+                color: #F1EFEC;
+                margin-top: -10px;
+            }
+
+            .profile p {
+                font-family: 'Manrope', sans-serif;
+                font-size: 17px;
+                color: #F1EFEC;
+                margin-top: 30px;
+            }
+
+            .exercise1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .exercise1 .week1,
+            .exercise1 .week2,
+            .exercise1 .week3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 200px;
+                padding: 20px;
+                background-color: #F1EFEC;
+                border-radius: 10px;
+                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                border: 1px solid #e0e0e0;
+                margin-top: 30px;
+            }
+
+            .exercise1 .week1 h1,
+            .exercise1 .week2 h1,
+            .exercise1 .week3 h1 {
+                font-family: 'Manrope', sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: #333333;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #555555;
+            }
+
+            .exercise1 .week1 h2,
+            .exercise1 .week2 h2,
+            .exercise1 .week3 h2 {
+                font-family: 'Manrope', sans-serif;
+                font-size: 16px;
+                color: #555555;
+                margin: 5px 0;
+            }
+
+            .exercise2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 50px;
+            }
+
+            .exercise2 .week4,
+            .exercise2 .week7 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 200px;
+                padding: 20px;
+                background-color: #F1EFEC;
+                border-radius: 10px;
+                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                border: 1px solid #e0e0e0;
+                margin-top: 30px;
+            }
+
+            .exercise2 .week4 h1,
+            .exercise2 .week7 h1 {
+                font-family: 'Manrope', sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                color: #333333;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #555555;
+            }
+
+            .exercise2 .week4 h2,
+            .exercise2 .week7 h2 {
+                font-family: 'Manrope', sans-serif;
+                font-size: 16px;
+                color: #555555;
+                margin: 5px 0;
+            }
+
+            .exercise1 .info a {
+                text-decoration: none;
+                color: #555555;
+                transition: color 0.3s ease;
+            }
+
+            .exercise1 .info a:hover {
+                color: #123458;
+                text-decoration: underline;
+            }
+
+            .exercise2 .info a {
+                text-decoration: none;
+                color: #555555;
+                transition: color 0.3s ease;
+            }
+
+            .exercise2 .info a:hover {
+                color: #123458;
+                text-decoration: underline;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo"><img src="logo.png" width="100%"></div>
+
+            <div class="social media logo">
+                <div><img src="fb.png" alt="Facebook"></div>
+                <div><img src="ig.png" alt="Instagram"></div>
+                <div><img src="spotify.png" alt="Spotify"></div>
+
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="profile">
+                <div class="profile pic"><img src="image.png" alt="Profile Picture"></div>
+                <h1>Saw Yin Xian</h1>
+                <h2>Web Publishing</h2>
+                <p>Hi, I’m Yin Xian.
+                    I’m a Digital Media student who loves designing websites, apps, and visuals that are easy to use
+                    and nice to look at. <br> I'm passionate about UI/UX design, graphic design, and bringing ideas to
+                    life through digital media.<br> I also enjoy listening to music, swimming, and taking photos in my
+                    free
+                    time. I believe design should feel good and work well.<br> Welcome to my personal page!
+                </p>
+            </div>
+
+            <div class="exercise1">
+                <div class="week1">
+                    <div class="info">
+                        <h1>Week 1</h1>
+                        <h2><a href="week1/exe1.html">Exercise 1</a></h2>
+                        <h2><a href="week1/exe2.html">Exercise 2</a></h2>
+                        <h2><a href="week1/exe3.html">Exercise 3</a></h2>
+                    </div>
+                </div>
+
+                <div class="week2">
+                    <div class="info">
+                        <h1>Week 2</h1>
+                        <h2><a href="week2/exe1.html">Exercise 1</a></h2>
+                        <h2><a href="week2/exe2.html">Exercise 2</a></h2>
+                    </div>
+                </div>
+
+                <div class="week3">
+                    <div class="info">
+                        <h1>Week 3</h1>
+                        <h2><a href="week3/exe1b.html">Exercise 1</a></h2>
+                        <h2><a href="week3/exe2.html">Exercise 2</a></h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="exercise2">
+                <div class="week4">
+                    <div class="info">
+                        <h1>Week 4</h1>
+                        <h2><a href="week4/index.html">Exercise 1</a></h2>
+                        <h2><a href="week4/portfolio.html">Exercise 2</a></h2>
+                    </div>
+                </div>
+
+                <div class="week7">
+                    <div class="info">
+                        <h1>Week 7</h1>
+                        <h2><a href="week5/index.html">Exercise 1</a></h2>
+                        <h2><a href="week5/portfolio.html">Exercise 2</a></h2>
+                    </div>
+                </div>
+            </div>
+
+
+</html>
