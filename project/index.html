@@ -4,6 +4,7 @@
 <head>
     <title>Red Velvet Fan Site - Get to know Red Velvet!</title>
     <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
         body {
@@ -131,11 +132,16 @@
 
         .music h1 {
             font-size: 50px;
+            /* Large font size for the title */
             color: #C40000;
+            /* Red color for the title */
             font-family: 'DM Serif Display', serif;
+            /* Elegant font */
             position: relative;
             font-weight: normal;
             letter-spacing: 2px;
+            margin-bottom: 40px;
+            /* Add spacing below the title */
         }
 
         .music h1::before,
@@ -145,6 +151,7 @@
             width: 550px;
             height: 1.3px;
             background-color: #811010;
+            /* Dark red line */
             position: absolute;
             top: 50%;
         }
@@ -328,21 +335,59 @@
         }
 
         .image {
+            display: flex;
+            min-height: 600px;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .container1 {
+            min-height: 600px;
+            width: 33.3%;
+        }
+
+        .sub-container1 {
+            background-image: url(image/seulgi.png);
+            min-height: 300px;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .sub-container2 {
+            background-image: url(image/yeri.png);
+            min-height: 300px;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .container2 {
+            background-image: url(image/wendy.png);
             min-height: 400px;
+            width: 33.3%;
+            background-size: cover;
         }
 
         .container3 {
-            width: 33.33%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            min-height: 600px;
+            width: 33.3%;
         }
 
-        .sub-container {
+        .sub-container3 {
+            background-image: url(image/joy.png);
+            min-height: 300px;
             width: 100%;
-            display: flex;
-            justify-content: center;
+            background-size: cover;
         }
+
+        .sub-container4 {
+            background-image: url(image/irene.png);
+            min-height: 300px;
+            width: 100%;
+            background-size: cover;
+
+        }
+
+
 
         @media screen and (max-width: 768px) {
 
@@ -554,6 +599,406 @@
             .gallery h1::after {
                 right: -100px;
             }
+
+            .image {
+                flex-direction: column;
+                min-height: 600px;
+                width: 100%;
+                gap: 20px;
+            }
+
+            .container1 {
+                min-height: 600px;
+                width: 100%
+            }
+
+            .container2 {
+                min-height: 600px;
+                width: 100%
+            }
+
+            .container3 {
+                min-height: 600px;
+                width: 100%
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+
+            .music h1::before,
+            .music h1::after {
+                content: "";
+                display: block;
+                width: 380px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .music h1::before {
+                left: -100px;
+            }
+
+            .music h1::after {
+                right: -100px;
+            }
+
+            .videos h1::before,
+            .videos h1::after {
+                content: "";
+                display: block;
+                width: 370px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .videos h1::before {
+                left: -100px;
+            }
+
+            .videos h1::after {
+                right: -100px;
+            }
+
+            .gallery h1::before,
+            .gallery h1::after {
+                content: "";
+                display: block;
+                width: 340px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .gallery h1::before {
+                left: -100px;
+            }
+
+            .gallery h1::after {
+                right: -100px;
+            }
+        }
+
+        @media screen and (max-width: 952px) {
+
+            .music h1::before,
+            .music h1::after {
+                content: "";
+                display: block;
+                width: 330px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .music h1::before {
+                left: -100px;
+            }
+
+            .music h1::after {
+                right: -100px;
+            }
+
+            .videos h1::before,
+            .videos h1::after {
+                content: "";
+                display: block;
+                width: 320px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .videos h1::before {
+                left: -100px;
+            }
+
+            .videos h1::after {
+                right: -100px;
+            }
+
+            .gallery h1::before,
+            .gallery h1::after {
+                content: "";
+                display: block;
+                width: 300px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .gallery h1::before {
+                left: -100px;
+            }
+
+            .gallery h1::after {
+                right: -100px;
+            }
+        }
+
+        @media screen and (max-width: 830px) {
+
+            .music h1::before,
+            .music h1::after {
+                content: "";
+                display: block;
+                width: 300px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .music h1::before {
+                left: -100px;
+            }
+
+            .music h1::after {
+                right: -100px;
+            }
+
+            .videos h1::before,
+            .videos h1::after {
+                content: "";
+                display: block;
+                width: 280px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .videos h1::before {
+                left: -100px;
+            }
+
+            .videos h1::after {
+                right: -100px;
+            }
+
+            .gallery h1::before,
+            .gallery h1::after {
+                content: "";
+                display: block;
+                width: 250px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .gallery h1::before {
+                left: -100px;
+            }
+
+            .gallery h1::after {
+                right: -100px;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+
+            .music h1::before,
+            .music h1::after {
+                content: "";
+                display: block;
+                width: 220px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .music h1::before {
+                left: -100px;
+            }
+
+            .music h1::after {
+                right: -100px;
+            }
+
+            .videos h1::before,
+            .videos h1::after {
+                content: "";
+                display: block;
+                width: 220px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .videos h1::before {
+                left: -100px;
+            }
+
+            .videos h1::after {
+                right: -100px;
+            }
+
+            .gallery h1::before,
+            .gallery h1::after {
+                content: "";
+                display: block;
+                width: 200px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .gallery h1::before {
+                left: -100px;
+            }
+
+            .gallery h1::after {
+                right: -100px;
+            }
+        }
+
+        @media screen and (max-width: 648px) {
+
+            .music h1::before,
+            .music h1::after {
+                content: "";
+                display: block;
+                width: 170px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .music h1::before {
+                left: -100px;
+            }
+
+            .music h1::after {
+                right: -100px;
+            }
+
+            .videos h1::before,
+            .videos h1::after {
+                content: "";
+                display: block;
+                width: 150px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .videos h1::before {
+                left: -100px;
+            }
+
+            .videos h1::after {
+                right: -100px;
+            }
+
+            .gallery h1::before,
+            .gallery h1::after {
+                content: "";
+                display: block;
+                width: 120px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .gallery h1::before {
+                left: -100px;
+            }
+
+            .gallery h1::after {
+                right: -100px;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+
+            .music h1::before,
+            .music h1::after {
+                content: "";
+                display: block;
+                width: 150px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .music h1::before {
+                left: -100px;
+            }
+
+            .music h1::after {
+                right: -100px;
+            }
+
+            .videos h1::before,
+            .videos h1::after {
+                content: "";
+                display: block;
+                width: 140px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .videos h1::before {
+                left: -100px;
+            }
+
+            .videos h1::after {
+                right: -100px;
+            }
+
+            .gallery h1::before,
+            .gallery h1::after {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 1.3px;
+                background-color: #811010;
+                /* Dark red line */
+                position: absolute;
+                top: 50%;
+            }
+
+            .gallery h1::before {
+                left: -100px;
+            }
+
+            .gallery h1::after {
+                right: -100px;
+            }
         }
     </style>
 
@@ -563,31 +1008,56 @@
     <div class="container">
         <div class="nav">
             <div>RED VELVET</div>
+
             <div class="section">
-                <div>Members</div>
-                <div>Music</div>
-                <div>Concert</div>
-                <div>Gallery</div>
-                <div>About Us</div>
+                <div class="menu-item"><a href="#">Members</a></div>
+                <div class="menu-item">
+                    <a href="#">Music <i class="fas fa-chevron-down down-icon"></i></a>
+                    <div class="submenu">
+                        <a href="#">Videos</a>
+                    </div>
+                </div>
+
+                <div class="menu-item"><a href="#">Concert</a></div>
+
+                <div class="menu-item">
+                    <a href="#">Gallery <i class="fas fa-chevron-down down-icon"></i></a>
+                    <div class="submenu">
+                        <a href="#">Irene</a>
+                        <a href="#">Seulgi</a>
+                        <a href="#">Wendy</a>
+                        <a href="#">Joy</a>
+                        <a href="#">Yeri</a>
+                    </div>
+                </div>
+
+                <div class="menu-item"><a href="#">About Us</a></div>
             </div>
         </div>
-    </div>
-    <div class="intro">
-        <div class="intro-text">
-            <h2>KPop Girl Group</h2>
-            <h1>Red Velvet</h1>
-            <p>Red Velvet, formed by SM Entertainment in 2014,is a versatile K-pop group known for their
-                diverse music,strong storytelling and powerful performances. Blending pop, R&B, electronic,
-                and experimental sounds, they captivate fans worldwide.</p>
-            <a href="#members" class="button">Meet the members</a>
+
+        <div class="intro">
+            <div class="intro-text">
+                <h2>KPop Girl Group</h2>
+                <h1>Red Velvet</h1>
+                <p>Red Velvet, formed by SM Entertainment in 2014, is a versatile K-pop group known for their
+                    diverse music, strong storytelling, and powerful performances. Blending pop, R&B, electronic,
+                    and experimental sounds, they captivate fans worldwide.</p>
+                <a href="#members" class="button">Meet the members</a>
+            </div>
+            <div class="intro-image">
+                <img src="image/group.png" alt="Red Velvet">
+            </div>
         </div>
-        <div class="intro-image">
-            <img src="image/group.png" alt="Red Velvet">
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-text">
-            <h1>MUSIC</h1>
+
+        <div class="music">
+            <div class="line-container1">
+                <div class="line1"></div>
+                <div class="music-text">
+                    <h1>MUSIC</h1>
+                </div>
+                <div class="line2"></div>
+            </div>
+
             <div class="music-album">
                 <div class="album1">
                     <img src="image/cosmie.png" alt="Album 1">
@@ -613,60 +1083,59 @@
             </div>
         </div>
     </div>
+
     <div class="videos">
-        <div class="videos-text">
-            <h1>VIDEOS</h1>
-            <div class="mv">
-                <div class="mv1">
-                    <img src="image/cosmic dance.png" alt="MV 1">
-                    <div class="info">
-                        <h5>Red Velvet 레드벨벳
-                            'Cosmic'<br>Performance Video</h5>
-                        <p>June 30, 2024</p>
-                    </div>
+        <div class="line-container2">
+            <div class="line1"></div>
+            <div class="videos-text">
+                <h1>VIDEOS</h1>
+            </div>
+            <div class="line2"></div>
+        </div>
+
+        <div class="mv">
+            <div class="mv1">
+                <img src="image/cosmic dance.png" alt="MV 1">
+                <div class="info">
+                    <h5>Red Velvet 레드벨벳 'Cosmic'<br>Performance Video</h5>
+                    <p>June 30, 2024</p>
                 </div>
-                <div class="mv2">
-                    <img src="image/fmr dance.png" alt="MV 2">
-                    <div class="info">
-                        <h5>Red Velvet 레드벨벳
-                            'FEEL MY RHYTHM'<br>Performance Video</h5>
-                        <p>March 23, 2022</p>
-                    </div>
+            </div>
+            <div class="mv2">
+                <img src="image/fmr dance.png" alt="MV 2">
+                <div class="info">
+                    <h5>Red Velvet 레드벨벳 'FEEL MY RHYTHM'<br>Performance Video</h5>
+                    <p>March 23, 2022</p>
                 </div>
-                <div class="mv3">
-                    <img src="image/psycho dance.png" alt="MV 3">
-                    <div class="info">
-                        <h5>Red Velvet 레드벨벳
-                            'Psycho' <br> Performance Video</h5>
-                        <p>January 8, 2020</p>
-                    </div>
+            </div>
+            <div class="mv3">
+                <img src="image/psycho dance.png" alt="MV 3">
+                <div class="info">
+                    <h5>Red Velvet 레드벨벳 'Psycho'<br>Performance Video</h5>
+                    <p>January 8, 2020</p>
                 </div>
             </div>
         </div>
+    </div>
 
     <div class="gallery">
-        <div class="gallery-text">
-            <h1>GALLERY</h1>
-            <div class="image">
-                <div class="container1">
-                    <div class="sub-container">
-                        <img src="image/seulgi.png" alt="IMG 1">
-                    </div>
-                    <div class="sub-container">
-                        <img src="image/yeri.png" alt="IMG 2">
-                    </div>
-                </div>
-                <div class="container2">
-                    <img src="image/wendy.png" alt="IMG 3">
-                </div>
-                <div class="container3">
-                    <div class="sub-container">
-                        <img src="image/joy.png" alt="IMG 4">
-                    </div>
-                    <div class="sub-container">
-                        <img src="image/irene.png" alt="IMG 5">
-                    </div>
-                </div>
+        <div class="line-container3">
+            <div class="line1"></div>
+            <div class="gallery-text">
+                <h1>GALLERY</h1>
+            </div>
+            <div class="line2"></div>
+        </div>
+
+        <div class="image">
+            <div class="container1">
+                <div class="sub-container1"></div>
+                <div class="sub-container2"></div>
+            </div>
+            <div class="container2"></div>
+            <div class="container3">
+                <div class="sub-container3"></div>
+                <div class="sub-container4"></div>
             </div>
         </div>
     </div>
