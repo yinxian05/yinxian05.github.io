@@ -1,0 +1,184 @@
+.irene,
+.seulgi,
+.wendy,
+.joy,
+.yeri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px;
+
+}
+
+.irene,
+.wendy,
+.yeri {
+    background-color: #000000;
+    color: #EAEAEA;
+    gap: 80px;
+}
+
+.seulgi,
+.joy {
+    background-color: #ffffff;
+    color: #000000;
+    gap: 50px;
+    flex-direction: row-reverse;
+
+}
+
+.irene-img,
+.wendy-img,
+.yeri-img {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.seulgi-img,
+.joy-img {
+    justify-content: left;
+}
+
+.irene-img img,
+.seulgi-img img,
+.wendy-img img,
+.joy-img img,
+.yeri-img img {
+    width: 440px;
+    height: 600px;
+}
+
+.irene-text,
+.wendy-text,
+.yeri-text {
+    width: 50%;
+}
+
+.seulgi-text,
+.joy-text {
+    width: 50%;
+}
+
+.irene-text h1,
+.wendy-text h1,
+.yeri-text h1 {
+    font-size: 120px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    font-family: 'Perandory', sans-serif;
+    color: #C40000;
+    margin-bottom: -35px;
+}
+
+.seulgi-text h1,
+.joy-text h1 {
+    font-size: 120px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    font-family: 'Perandory', sans-serif;
+    color: #000000;
+    margin-bottom: -35px;
+}
+
+.irene-text h5,
+.seulgi-text h5,
+.wendy-text h5,
+.joy-text h5,
+.yeri-text h5 {
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 2.2;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 80px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #C40000;
+    transition: all 0.2s ease;
+}
+
+.irene .button,
+.wendy .button,
+.yeri .button {
+    color: #EAEAEA;
+    background-color: transparent;
+}
+
+.seulgi .button,
+.joy .button {
+    color: #C40000;
+    background-color: transparent;
+}
+
+.button:hover {
+    background-color: #C40000;
+    color: #EAEAEA;
+}
+
+@media screen and (max-width: 768px) {
+
+    .irene,
+    .seulgi,
+    .wendy,
+    .joy,
+    .yeri {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .irene-img,
+    .seulgi-img,
+    .wendy-img,
+    .joy-img,
+    .yeri-img {
+        justify-content: center;
+        margin-bottom: -90px;
+
+    }
+
+    .irene-img img,
+    .seulgi-img img,
+    .wendy-img img,
+    .joy-img img,
+    .yeri-img img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .irene-text,
+    .seulgi-text,
+    .wendy-text,
+    .joy-text,
+    .yeri-text {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .irene-text h1,
+    .seulgi-text h1,
+    .wendy-text h1,
+    .joy-text h1,
+    .yeri-text h1 {
+        font-size: 70px;
+        margin-bottom: -10px;
+    }
+
+    .irene-text h5,
+    .seulgi-text h5,
+    .wendy-text h5,
+    .joy-text h5,
+    .yeri-text h5 {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.yeri {
+    align-items: center;
+    text-align: center;
+    color: #740000;
+    padding: 10px 100px;
+}
+
+.h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+}
+
+.image {
+    display: flex;
+    min-height: 1000px;
+    width: 100%;
+    gap: 20px;
+}
+
+.container1 {
+    min-height: 1000px;
+    width: 66.67%;
+}
+
+.sub-container1 {
+    background-image: url(../image/yeri1.png);
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.down {
+    display: flex;
+    min-height: 500px;
+    width: 100%;
+    gap: 20px;
+}
+
+.sub-container2 {
+    background-image: url(../image/yeri2.png);
+    min-height: 500px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-container3 {
+    background-image: url(../image/yeri3.png);
+    min-height: 500px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container2 {
+    flex-direction: column;
+    min-height: 1000px;
+    width: 33.3%;
+}
+
+.sub-container4 {
+    background-image: url(../image/yeri4.png);
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.sub-container5 {
+    background-image: url(../image/yeri5.png);
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .image {
+        flex-direction: column;
+        min-height: 1000px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .container1 {
+        min-height: 500px;
+        width: 100%
+    }
+
+    .container2 {
+        min-height: 500px;
+        width: 100%
+    }
+
+    .container3 {
+        min-height: 500px;
+        width: 100%
+    }
+
+}

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wendy {
+    align-items: center;
+    text-align: center;
+    color: #740000;
+    padding: 20px 100px;
+}
+
+.image {
+    display: flex;
+    min-height: 700px;
+    width: 100%;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+}
+
+.container1 {
+    background-image: url(../image/wendy1.png);
+    min-height: 700px;
+    width: 33.3%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+    width: 66.7%;
+    gap: 20px;
+}
+
+.sub-container1 {
+    background-image: url(../image/wendy2.png);
+    min-height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-container2 {
+    background-image: url(../image/wendy3.png);
+    min-height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        flex-direction: column;
+        min-height: 700px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .container1 {
+        min-height: 700px;
+        width: 100%
+    }
+
+    .container2 {
+        min-height: 700px;
+        width: 100%
+    }
+
+}

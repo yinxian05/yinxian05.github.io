@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.joy {
+    align-items: center;
+    text-align: center;
+    color: #740000;
+    padding: 10px 100px;
+}
+
+.h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+}
+
+.image {
+    display: flex;
+    min-height: 1000px;
+    width: 100%;
+    gap: 20px;
+}
+
+.container1 {
+    min-height: 1000px;
+    width: 33.3%;
+}
+
+.sub-container1 {
+    background-image: url(../image/joy1.png);
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.sub-container2 {
+    background-image: url(../image/joy5.png);
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container2 {
+    min-height: 1000px;
+    width: 33.3%;
+}
+
+.sub-container3 {
+    background-image: url(../image/joy2.png);
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.sub-container4 {
+    background-image: url(../image/joy4.png);
+    min-height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container3 {
+    min-height: 1000px;
+    width: 33.3%;
+}
+
+.sub-container5 {
+    background-image: url(../image/joy3.png);
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.sub-container6 {
+    background-image: url(../image/joy6.png);
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        flex-direction: column;
+        min-height: 1000px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .container1 {
+        min-height: 500px;
+        width: 100%
+    }
+
+    .container2 {
+        min-height: 500px;
+        width: 100%
+    }
+
+    .container3 {
+        min-height: 500px;
+        width: 100%
+    }
+
+}
