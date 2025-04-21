@@ -324,3 +324,81 @@ body {
     color: #3f3f3f;
     font-size: 18px;
 }
+
+.container5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 20px 140px;
+}
+
+.music9,
+.music10,
+.music11,
+.music12 {
+    position: relative;
+}
+
+.music9 img,
+.music10 img,
+.music11 img,
+.music12 img {
+    width: 270px;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.music9:hover img,
+.music10:hover img,
+.music11:hover img,
+.music12:hover img {
+    opacity: 0.7;
+}
+
+.tracklist9,
+.tracklist10,
+.tracklist11,
+.tracklist12 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.music9:hover .tracklist9,
+.music10:hover .tracklist10,
+.music11:hover .tracklist11,
+.music12:hover .tracklist12 {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
+}
+
+.tracklist9 h2,
+.tracklist10 h2,
+.tracklist11 h2,
+.tracklist12 h2 {
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.tracklist9 p,
+.tracklist10 p,
+.tracklist11 p,
+.tracklist12 p {
+    color: #3f3f3f;
+    font-size: 18px;
+}

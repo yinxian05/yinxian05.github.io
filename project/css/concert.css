@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    background-color: #000000;
+}
+
+.line-container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.line1 {
+    background-color: red;
+    height: 1px;
+    flex: 1;
+    margin-right: 25px;
+}
+
+.text h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.line2 {
+    background-color: red;
+    height: 1px;
+    flex: 4;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.container2 {
+    padding: 20px 140px;
+    margin-bottom: 10px;
+}
+
+.concert1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.fancon-image {
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+    justify-content: right;
+}
+
+.fancon-image img {
+    width: 450px;
+    transition: opacity 0.2s ease;
+}
+
+.fancon-image:hover img {
+    opacity: 0.65;
+}
+
+.fancon-text {
+    width: 50%;
+    font-family: "Red Hat Display", sans-serif;
+    color: #ffffff;
+    justify-content: left;
+    margin-top: 80px;
+    text-align: left;
+    margin-bottom: -80px;
+}
+
+.fancon-text h1 {
+    font-size: 56px;
+    color: #d6d6d6;
+}
+
+.fancon-text h1:hover {
+    color: #ebebeb;
+    cursor: pointer;
+}
+
+.fancon-text .line {
+    background-color: #f1f1f1;
+    height: 0.5px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.fancon-text h2 {
+    font-size: 26px;
+    color: #b1b1b1;
+    margin-top: 20px;
+}
+
+.fancon-text h2:hover {
+    color: #ebebeb;
+    cursor: pointer;
+}
+
+.fancon-text p {
+    font-size: 16px;
+    color: #d6d6d6;
+    margin-top: 20px;
+}
+
+.fancon-text p:hover {
+    color: #ebebeb;
+    cursor: pointer;
+}
+
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 70px;
+    padding: 20px 140px;
+    margin-bottom: 40px;
+}
+
+.concert2,
+.concert3,
+.concert4,
+.concert5 {
+    position: relative;
+}
+
+.concert2 img,
+.concert3 img,
+.concert4 img,
+.concert5 img {
+    width: 270px;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.concert2 :hover img,
+.concert3 :hover img,
+.concert4 :hover img,
+.concert5 :hover img {
+    opacity: 0.7;
+}
+
+.info {
+    color: #f3f3f3;
+    margin-top: 10px;
+    text-align: left;
+    font-family: "Red Hat Display", sans-serif;
+    margin-top: -10px;
+}
+
+.info h1 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.info p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: -5px;
+}
