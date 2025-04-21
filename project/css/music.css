@@ -190,7 +190,6 @@ body {
 }
 
 .info h5 {
-    margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -198,6 +197,7 @@ body {
 .info p {
     font-size: 10px;
     color: #c5c5c5;
+    margin-top: 0px;
 }
 
 .tracklist1,
@@ -219,19 +219,6 @@ body {
     font-family: "Red Hat Display", sans-serif;
 }
 
-.tracklist1 {
-    line-height: 1.5;
-}
-
-.tracklist2 {
-    line-height: 1.61;
-}
-
-.tracklist3,
-.tracklist4 {
-    line-height: 1.86;
-}
-
 .music1:hover .tracklist1,
 .music2:hover .tracklist2,
 .music3:hover .tracklist3,
@@ -249,7 +236,6 @@ body {
     font-size: 22px;
     font-weight: bold;
     text-decoration: underline;
-    margin-top: -3px;
 }
 
 .tracklist1 p,
@@ -258,7 +244,6 @@ body {
 .tracklist4 p {
     color: #3f3f3f;
     font-size: 18px;
-    margin-top: -10px;
 }
 
 .container4 {
@@ -291,25 +276,6 @@ body {
     opacity: 0.7;
 }
 
-.info {
-    color: #f3f3f3;
-    margin-top: 10px;
-    text-align: left;
-    font-family: "Red Hat Display", sans-serif;
-    margin-top: -10px;
-}
-
-.info h5 {
-    margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.info p {
-    font-size: 10px;
-    color: #c5c5c5;
-}
-
 .tracklist5,
 .tracklist6,
 .tracklist7,
@@ -327,4 +293,31 @@ body {
     transition: opacity 0.2s ease, visibility 0s linear 0.2s;
     box-sizing: border-box;
     font-family: "Red Hat Display", sans-serif;
+}
+
+.music5:hover .tracklist5,
+.music6:hover .tracklist6,
+.music7:hover .tracklist7,
+.music8:hover .tracklist8 {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
+}
+
+.tracklist5 h2,
+.tracklist6 h2,
+.tracklist7 h2,
+.tracklist8 h2 {
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tracklist5 p,
+.tracklist6 p,
+.tracklist7 p,
+.tracklist8 p {
+    color: #3f3f3f;
+    font-size: 18px;
 }
