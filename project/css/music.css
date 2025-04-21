@@ -41,6 +41,7 @@ body {
 
 .container2 {
     padding: 20px 140px;
+    margin-bottom: 10px;
 }
 
 .chill-kill {
@@ -72,16 +73,16 @@ body {
 
 .tracklist {
     position: absolute;
-    top: 35px;
+    top: 10px;
     left: 15px;
     width: 550px;
+    height: 550px;
     background-color: rgba(255, 255, 255, 0.8);
     font-family: "Red Hat Display", sans-serif;
     padding: 20px;
     width: 85%;
     box-sizing: border-box;
     font-size: 20px;
-    line-height: 1.6;
     text-align: left;
     opacity: 0;
     visibility: hidden;
@@ -93,8 +94,6 @@ body {
     visibility: visible;
     transition: opacity 0.2s ease, visibility 0s linear 0s;
 }
-
-
 
 .tracklist p:hover {
     color: #252525;
@@ -115,7 +114,6 @@ body {
 .chill-kill-text h1 {
     font-size: 62px;
     color: #d6d6d6;
-
 }
 
 .chill-kill-text h1:hover {
@@ -153,9 +151,11 @@ body {
 
 .container3 {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
     padding: 20px 140px;
+    margin-bottom: 20px;
 }
 
 .music1,
@@ -169,7 +169,7 @@ body {
 .music2 img,
 .music3 img,
 .music4 img {
-    width: 250px;
+    width: 270px;
     display: block;
     transition: opacity 0.2s ease;
 }
@@ -195,9 +195,9 @@ body {
 }
 
 .info p {
-    font-size: 10px;
+    font-size: 14px;
     color: #c5c5c5;
-    margin-top: 0px;
+    margin-top: -24px;
 }
 
 .tracklist1,
@@ -207,11 +207,12 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 270px;
+    height: 270px;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: left;
     align-items: center;
-    padding: 10px;
+    padding: 12px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0s linear 0.2s;
@@ -248,8 +249,9 @@ body {
 
 .container4 {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
     padding: 20px 140px;
 }
 
@@ -264,7 +266,7 @@ body {
 .music6 img,
 .music7 img,
 .music8 img {
-    width: 250px;
+    width: 270px;
     display: block;
     transition: opacity 0.2s ease;
 }
@@ -283,7 +285,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 270px;
+    height: 270px;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: left;
     align-items: center;
