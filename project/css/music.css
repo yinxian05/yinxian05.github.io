@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    background-color: #000000;
+}
+
+.line-container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.line1 {
+    background-color: red;
+    height: 1px;
+    flex: 1;
+    margin-right: 25px;
+}
+
+.text h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.line2 {
+    background-color: red;
+    height: 1px;
+    flex: 4;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.container2 {
+    padding: 20px 140px;
+}
+
+.chill-kill {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.chill-kill-image {
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+    justify-content: right;
+}
+
+.chill-kill-image img {
+    width: 550px;
+    transition: opacity 0.2s ease;
+}
+
+.chill-kill-image:hover img {
+    opacity: 0.65;
+}
+
+.tracklist {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 550px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Red Hat Display", sans-serif;
+    padding: 20px;
+    width: 85%;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+}
+
+.chill-kill-image:hover .tracklist {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease, visibility 0s linear 0s;
+}
+
+
+
+.tracklist p:hover {
+    color: #252525;
+    font-weight: 600;
+    transition: all 0.3 ease;
+}
+
+.chill-kill-text {
+    width: 50%;
+    font-family: "Red Hat Display", sans-serif;
+    color: #ffffff;
+    justify-content: left;
+    margin-top: 80px;
+    text-align: left;
+    margin-bottom: -80px;
+}
+
+.chill-kill-text h1 {
+    font-size: 62px;
+    color: #d6d6d6;
+
+}
+
+.chill-kill-text h1:hover {
+    color: #ebebeb;
+    cursor: pointer;
+}
+
+.chill-kill-text h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: -45px;
+    color: #d4d4d4;
+}
+
+.chill-kill-text h2:hover {
+    cursor: pointer;
+}
+
+.chill-kill-text p {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #c6c6c6;
+}
+
+.chill-kill-text p:hover {
+    cursor: pointer;
+}
+
+.chill-kill-text .line {
+    background-color: #ffffff;
+    height: 0.65px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 140px;
+}
+
+.music1,
+.music2,
+.music3,
+.music4 {
+    position: relative;
+}
+
+.music1 img,
+.music2 img,
+.music3 img,
+.music4 img {
+    width: 250px;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.music1:hover img,
+.music2:hover img,
+.music3:hover img,
+.music4:hover img {
+    opacity: 0.7;
+}
+
+.info {
+    color: #f3f3f3;
+    margin-top: 10px;
+    text-align: left;
+    font-family: "Red Hat Display", sans-serif;
+    margin-top: -10px;
+}
+
+.info h5 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 10px;
+    color: #c5c5c5;
+}
+
+.tracklist1,
+.tracklist2,
+.tracklist3,
+.tracklist4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.tracklist1 {
+    line-height: 1.5;
+}
+
+.tracklist2 {
+    line-height: 1.61;
+}
+
+.tracklist3,
+.tracklist4 {
+    line-height: 1.86;
+}
+
+.music1:hover .tracklist1,
+.music2:hover .tracklist2,
+.music3:hover .tracklist3,
+.music4:hover .tracklist4 {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear 0s;
+}
+
+.tracklist1 h2,
+.tracklist2 h2,
+.tracklist3 h2,
+.tracklist4 h2 {
+    color: #1d1d1d;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: -3px;
+}
+
+.tracklist1 p,
+.tracklist2 p,
+.tracklist3 p,
+.tracklist4 p {
+    color: #3f3f3f;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 140px;
+}
+
+.music5,
+.music6,
+.music7,
+.music8 {
+    position: relative;
+}
+
+.music5 img,
+.music6 img,
+.music7 img,
+.music8 img {
+    width: 250px;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.music5:hover img,
+.music6:hover img,
+.music7:hover img,
+.music8:hover img {
+    opacity: 0.7;
+}
+
+.info {
+    color: #f3f3f3;
+    margin-top: 10px;
+    text-align: left;
+    font-family: "Red Hat Display", sans-serif;
+    margin-top: -10px;
+}
+
+.info h5 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 10px;
+    color: #c5c5c5;
+}
+
+.tracklist5,
+.tracklist6,
+.tracklist7,
+.tracklist8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
