@@ -262,6 +262,15 @@ body {
         transition: opacity 0.2s ease, visibility 0s linear 0.2s;
     }
 
+    .container2,
+    .container3,
+    .container4,
+    .container5 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 50px 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -271,7 +280,6 @@ body {
         align-items: center;
         text-align: center;
     }
-
 
     .container2,
     .container3,
