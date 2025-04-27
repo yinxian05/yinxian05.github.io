@@ -181,4 +181,15 @@
         font-size: 16px;
         line-height: 1.8;
     }
+
+    .button {
+        display: inline-block;
+        padding: 10px 90px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        border-radius: 25px;
+        border: 2px solid #C40000;
+        transition: all 0.2s ease;
+    }
 }

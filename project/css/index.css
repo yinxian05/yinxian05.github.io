@@ -358,8 +358,9 @@ body {
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
-        padding: 35px 150px 150px;
+        padding: 60px;
         background-color: #000000;
+        margin-bottom: 50px;
     }
 
     .intro-text {
@@ -368,12 +369,11 @@ body {
     }
 
     .intro-image {
-        width: 120%;
         text-align: center;
     }
 
     .intro-image img {
-        width: 85%;
+        width: 120px;
         margin-top: -30px;
         margin-bottom: 20px;
     }
@@ -444,7 +444,7 @@ body {
         flex-wrap: wrap;
         content: "";
         display: block;
-        width: 200px;
+        width: 210px;
         height: 1.3px;
         background-color: #811010;
         position: absolute;

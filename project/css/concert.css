@@ -41,18 +41,13 @@ body {
 
 .container2 {
     padding: 20px 140px;
-    margin-bottom: 10px;
 }
 
 .concert1 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     gap: 10px;
-    margin-top: 40px;
-    margin-bottom: 20px;
 }
 
 .fancon-image {
@@ -63,7 +58,7 @@ body {
 }
 
 .fancon-image img {
-    width: 450px;
+    width: 100%;
     transition: opacity 0.2s ease;
 }
 
@@ -75,10 +70,9 @@ body {
     width: 50%;
     font-family: "Red Hat Display", sans-serif;
     color: #ffffff;
-    justify-content: left;
+    align-items: flex-end;
     margin-top: 80px;
     text-align: left;
-    margin-bottom: -80px;
 }
 
 .fancon-text h1 {
@@ -171,3 +165,5 @@ body {
     color: #ffffff;
     margin-top: -5px;
 }
+
+@media screen and (max-width: 768px) {}
