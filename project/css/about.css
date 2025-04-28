@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    width: 100%;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+.intro-text {
+    width: 30%;
+    cursor: pointer;
+}
+
+.faq {
+    width: 70%;
+    cursor: pointer;
+}
+
+.faq-question {
+    width: 70%;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+
+.faq-question:hover {
+    background-color: #e3e3e3;
+}
+
+.faq-answer {
+    flex-wrap: wrap;
+    max-height: 0;
+    padding: 0 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.faq-answer p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.intro-text h2 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: "Red Hat Display", sans-serif;
+    color: #2d2d2d;
+}
+
+.intro-text p {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Red Hat Display", sans-serif;
+    color: #171717;
+}
+
+@media screen and (max-width: 964px) {
+    .intro-text h2 {
+        font-size: 22px;
+    }
+
+    .intro-text p {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .intro-text h2 {
+        font-size: 24px;
+    }
+
+    .intro-text p {
+        font-size: 40px;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        width: 100%;
+    }
+
+    .faq {
+        width: 100%;
+        cursor: pointer;
+    }
+
+}

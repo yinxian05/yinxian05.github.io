@@ -6,7 +6,7 @@
 <head>
     <title>Red Velvet Fan Site - Get to know Red Velvet!</title>
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -43,3 +43,118 @@
                 <div class="menu-item"><a href="about.html">About Us</a></div>
             </div>
         </div>
+
+
+        <div class="container1">
+            <div class="intro-text">
+                <h2>FAQ</h2>
+                <p>Frequently<br>
+                    asked<br>
+                    questions.</p>
+            </div>
+
+            <div class="faq">
+                <div class="faq-item">
+                    <button class="faq-question">Will Irene &amp; Seulgi’s subunit make a comeback?<i
+                            class="fas fa-chevron-down down-icon"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, SM Entertainment has confirmed that the beloved Red Velvet subunit will be releasing
+                            a
+                            new mini-album in May 2025.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What are Red Velvet members currently focusing on?<i
+                            class="fas fa-chevron-down down-icon"></i></button>
+                    <div class="faq-answer">
+                        <p> Irene and Seulgi are preparing a subunit comeback and will start their "Balance" Asia
+                            tour
+                            in June 2025.</p>
+                        <p> Seulgi also released her second solo EP, Accidentally On Purpose, in March 2025.</p>
+                        <p> Wendy left SM Entertainment and signed with ASND but will continue Red Velvet
+                            activities.
+                        </p>
+                        <p> Joy renewed her contract with SM Entertainment and is active in music and acting.</p>
+                        <p> Yeri also left SM but stays in Red Velvet and will pursue solo activities separately.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"> What is Red Velvet’s latest album?<i
+                            class="fas fa-chevron-down down-icon"></i></button>
+                    <div class="faq-answer">
+                        <p>Red Velvet’s latest album is their 7th mini-album "Cosmic", released on June 24, 2024, to
+                            celebrate their 10th anniversary. It features six tracks, with the title song "Cosmic."
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Has Red Velvet renewed their contracts?<i
+                                class="fas fa-chevron-down down-icon"></i></button>
+                        <div class="faq-answer">
+                            <p>Seulgi, Irene, and Joy have renewed their contracts with SM Entertainment. Wendy and
+                                Yeri
+                                left SM Entertainment in April 2025 but will continue to stay in Red Velvet and
+                                participate in group activities.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Is Red Velvet releasing a movie?<i
+                                class="fas fa-chevron-down down-icon"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes! Red Velvet released a concert film called "Red Velvet Happiness Diary: My Dear,
+                                ReVe1uv In Cinemas" on February 5, 2025, to celebrate their 10th anniversary. It
+                                features live performances, behind-the-scenes moments, and interviews, and was shown
+                                in
+                                special formats like 4DX and SCREENX.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question"> What is Red Velvet’s fandom name?<i
+                                class="fas fa-chevron-down down-icon"></i></button>
+                        <div class="faq-answer">
+                            <p>Red Velvet’s fandom name is ReVeluv, a blend of “Red Velvet” and “Love,” symbolizing
+                                the
+                                love between the group and their fans. </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Who is the leader of Red Velvet?<i
+                                class="fas fa-chevron-down down-icon"></i></button>
+                        <div class="faq-answer">
+                            <p>The leader of Red Velvet is Irene. She has been the leader since the group’s debut in
+                                2014.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-social">
+            <img src="image/youtube.png" alt="Youtube">
+            <img src="image/instagram.png" alt="Instagram">
+            <img src="image/spotify.png" alt="Spotify">
+            <img src="image/twitter.png" alt="Twitter">
+        </div>
+        <p>&copy; 2025 Red Velvet. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.querySelectorAll(".faq-question").forEach((button) => {
+            button.addEventListener("click", () => {
+                const faqItem = button.parentElement;
+                faqItem.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
