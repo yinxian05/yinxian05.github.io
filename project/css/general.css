@@ -90,12 +90,10 @@ body {
 
 .submenu a:hover {
     text-decoration: underline;
-
 }
 
 .submenu:hover {
     display: block;
-
 }
 
 .menu-item a {
@@ -157,9 +155,10 @@ body {
 
     .nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 20px;
+        justify-content: space-between;
         background-color: #740000;
         cursor: pointer;
     }
