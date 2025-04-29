@@ -18,7 +18,7 @@
             <a href="index.html">RED VELVET</a>
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 
-            <div class="section">
+            <div class="section" id="mobile-menu">
                 <div class="menu-item"><a href="member.html">Members</a></div>
                 <div class="menu-item">
                     <a href="#">Media <i class="fas fa-chevron-down down-icon"></i></a>
@@ -174,13 +174,13 @@
 
     <script>
         const toggleButton = document.getElementById("menu-toggle");
-        const menu = document.getElementById("mobile-menu");
+        const menu = document.querySelector(".section"); // Target the element with the class 'section'
 
         toggleButton.addEventListener("click", () => {
-            section.classList.toggle("active");
+            menu.classList.toggle("active"); // Toggle the 'active' class on the menu
 
             // Change icon
-            if (section.classList.contains("active")) {
+            if (menu.classList.contains("active")) {
                 toggleButton.innerHTML = "&times;"; // × (cross)
             } else {
                 toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
