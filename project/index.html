@@ -16,6 +16,7 @@
     <div class="container">
         <div class="nav">
             <a href="index.html">RED VELVET</a>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 
             <div class="section">
                 <div class="menu-item"><a href="member.html">Members</a></div>
@@ -170,6 +171,23 @@
         </div>
         <p>&copy; 2025 Red Velvet. All rights reserved.</p>
     </div>
+
+    <script>
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        toggleButton.addEventListener("click", () => {
+            section.classList.toggle("active");
+
+            // Change icon
+            if (section.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;"; // × (cross)
+            } else {
+                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+            }
+        });
+    </script>
+
 </body>
 
 </html>

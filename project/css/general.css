@@ -112,6 +112,19 @@ body {
     display: block;
 }
 
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    z-index: 1001;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -160,11 +173,26 @@ body {
         margin-top: 5px;
     }
 
-    .section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 60px;
+    .menu-toggle {
+        display: block;
+    }
 
+    .section {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        padding-top: 5rem;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .section.active {
+        display: flex;
     }
 
     .section div {
