@@ -45,8 +45,7 @@
 .wendy-img img,
 .joy-img img,
 .yeri-img img {
-    width: 440px;
-    height: 600px;
+    width: 100%;
 }
 
 .irene-text,
