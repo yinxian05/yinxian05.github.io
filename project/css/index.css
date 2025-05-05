@@ -233,7 +233,7 @@ body {
     font-size: 18px;
 }
 
-.mv p {
+.mv1 p {
     color: #ffffff;
     text-align: left;
     font-family: "Red Hat Display", sans-serif;
@@ -781,3 +781,4 @@ body {
             width: 100px;
         }
     }
+}
