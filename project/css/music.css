@@ -75,7 +75,7 @@ body {
     font-family: "Red Hat Display", sans-serif;
     padding: 20px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 20vw;
     text-align: left;
     opacity: 0;
     visibility: hidden;
@@ -230,7 +230,13 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: 180px;
+        height: 193px;
+    }
+
+    .tracklist h2 {
+        margin-top: -5px;
+        margin-bottom: -14px;
+
     }
 }
 
@@ -260,7 +266,7 @@ body {
     }
 
     .container3 .music-item {
-        width: 2%;
+        width: 56%;
     }
 
     .tracklist {
@@ -269,6 +275,44 @@ body {
         left: 0;
         width: 100%;
         height: 440px;
+    }
+}
+
+@media screen and (max-width: 1052px) {
+
+    .chill-kill {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .chill-kill-image {
+        width: 75%;
+    }
+
+    .container {
+        gap: 50px 0;
+    }
+
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+    }
+
+    .container3 .music-item {
+        width: 40%;
+    }
+
+    .tracklist {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 325px;
     }
 }
 
@@ -305,6 +349,6 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: 390px;
+        height: 380px;
     }
 }

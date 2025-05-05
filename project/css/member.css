@@ -37,6 +37,7 @@
 
 .seulgi-img,
 .joy-img {
+    width: 50%;
     justify-content: left;
 }
 
@@ -45,7 +46,7 @@
 .wendy-img img,
 .joy-img img,
 .yeri-img img {
-    width: 100%;
+    width: 70%;
 }
 
 .irene-text,
@@ -57,6 +58,7 @@
 .seulgi-text,
 .joy-text {
     width: 50%;
+    justify-content: right;
 }
 
 .irene-text h1,

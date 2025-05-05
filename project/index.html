@@ -74,21 +74,21 @@
 
             <div class="music-album">
                 <div class="album1">
-                    <img src="image/cosmie.png" alt="Album 1">
+                    <img src="image/cosmie.jpg" alt="Album 1">
                     <div class="info">
                         <h5>Cosmic (Cosmie Ver)</h5>
                         <p>August 1, 2024</p>
                     </div>
                 </div>
                 <div class="album2">
-                    <img src="image/cosmic.png" alt="Album 2">
+                    <img src="image/cosmic.jpg" alt="Album 2">
                     <div class="info">
                         <h5>Cosmic</h5>
                         <p>June 24, 2024</p>
                     </div>
                 </div>
                 <div class="album3">
-                    <img src="image/chillkill.png" alt="Album 3">
+                    <img src="image/chillkillcover.jpg" alt="Album 3">
                     <div class="info">
                         <h5>Chill Kill</h5>
                         <p>November 13, 2023</p>
@@ -113,25 +113,28 @@
 
         <div class="mv">
             <div class="mv1">
-                <img src="image/cosmic dance.png" alt="MV 1">
-                <div class="info">
-                    <h5>Red Velvet 레드벨벳 'Cosmic'<br>Performance Video</h5>
-                    <p>June 30, 2024</p>
-                </div>
+                <iframe width="70%" src="https://www.youtube.com/embed/jv-UAioFOW0?si=uMhr3EMWIWkk7B3v&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h1><span lang="ko">Red Velvet 레드벨벳</span> 'Sweet Dreams' Special Video</h1>
+                <p>Aug 1, 2024</p>
             </div>
-            <div class="mv2">
-                <img src="image/fmr dance.png" alt="MV 2">
-                <div class="info">
-                    <h5>Red Velvet 레드벨벳 'FEEL MY RHYTHM'<br>Performance Video</h5>
-                    <p>March 23, 2022</p>
-                </div>
+            <div class="mv1">
+                <iframe width="70%" src="https://www.youtube.com/embed/KdOF5-h4qpw?si=rzI0wP8ZueE6qdvo&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h1>IRENE <span lang="ko">아이린</span> 'Like A Flower' MV</h1>
+                <p>Nov 26, 2024</p>
             </div>
-            <div class="mv3">
-                <img src="image/psycho dance.png" alt="MV 3">
-                <div class="info">
-                    <h5>Red Velvet 레드벨벳 'Psycho'<br>Performance Video</h5>
-                    <p>January 8, 2020</p>
-                </div>
+            <div class="mv1">
+                <iframe width="70%" src="https://www.youtube.com/embed/S-VLzICd2FE?si=1-Gc-QfH64Rf0x3y&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h1>SEULGI <span lang="ko">슬기</span> 'Baby, Not Baby' MV</h1>
+                <p>March 10, 2025</p>
             </div>
         </div>
     </div>
@@ -149,16 +152,30 @@
             <a href="#" class="text-button">View More &gt;&gt;</a>
         </div>
 
-        <div class="image">
-            <div class="container1">
-                <div class="sub-container1"></div>
-                <div class="sub-container2"></div>
-                <div class="sub-container3"></div>
-            </div>
-            <div class="container2"></div>
-            <div class="container3">
-                <div class="sub-container4"></div>
-                <div class="sub-container5"></div>
+        <div class="image-grid">
+            <a href="image/seulgi.png" class="gallery-item" data-lightbox="mygallery">
+                <div class="thumbnail sub-container1"></div>
+            </a>
+            <a href="image/yeri.png" class="gallery-item" data-lightbox="mygallery">
+                <div class="thumbnail sub-container2"></div>
+            </a>
+            <a href="image/wendy.png" class="gallery-item" data-lightbox="mygallery">
+                <div class="thumbnail container2"></div>
+            </a>
+            <a href="image/joy.png" class="gallery-item" data-lightbox="mygallery">
+                <div class="thumbnail sub-container4"></div>
+            </a>
+            <a href="image/irene.png" class="gallery-item" data-lightbox="mygallery">
+                <div class="thumbnail sub-container5"></div>
+            </a>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close-button">&times;</span>
+            <img id="lightbox-image" src="image/placeholder.png" alt="Large Image">
+            <div class="lightbox-controls">
+                <button class="prev-button">&lt;</button>
+                <button class="next-button">&gt;</button>
             </div>
         </div>
     </div>
@@ -184,6 +201,50 @@
                 toggleButton.innerHTML = "&times;"; // × (cross)
             } else {
                 toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const closeButton = document.querySelector('.close-button');
+            const prevButton = document.querySelector('.prev-button');
+            const nextButton = document.querySelector('.next-button');
+            let currentImageIndex = 0;
+            let imagesArray = [];
+
+            galleryItems.forEach((item, index) => {
+                imagesArray.push(item.href);
+                item.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent the default link behavior
+                    currentImageIndex = index;
+                    lightboxImage.src = imagesArray[currentImageIndex];
+                    lightbox.classList.add('active');
+                });
+            });
+
+            closeButton.addEventListener('click', function () {
+                lightbox.classList.remove('active');
+            });
+
+            lightbox.addEventListener('click', function (event) {
+                // Close lightbox if clicked outside the image
+                if (event.target === lightbox) {
+                    lightbox.classList.remove('active');
+                }
+            });
+
+            if (prevButton && nextButton) {
+                prevButton.addEventListener('click', function () {
+                    currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+                    lightboxImage.src = imagesArray[currentImageIndex];
+                });
+
+                nextButton.addEventListener('click', function () {
+                    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+                    lightboxImage.src = imagesArray[currentImageIndex];
+                });
             }
         });
     </script>
