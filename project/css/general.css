@@ -165,7 +165,7 @@ body {
     .nav div {
         color: #EAEAEA;
         font-family: 'Perandory', sans-serif;
-        font-size: 54px;
+        font-size: 45px;
         text-align: center;
         letter-spacing: 3.5px;
         margin-top: 5px;
@@ -176,8 +176,9 @@ body {
         position: fixed;
         cursor: pointer;
         display: block;
+        align-items: end;
         right: 0;
-        top: 0;
+        top: 5px;
     }
 
     .section {
@@ -221,7 +222,7 @@ body {
         display: none;
         position: absolute;
         min-width: 160px;
-        width: 100%;
+        width: 93%;
         z-index: 1;
         margin: 10px 0px;
         background-color: #000000;

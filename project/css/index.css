@@ -324,101 +324,48 @@ body {
     right: -100px;
 }
 
-.image-grid {
-    display: grid;
-    /* Use grid for a more flexible layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Responsive columns */
-    gap: 20px;
-    margin-top: 50px;
-}
-
-.gallery-item {
-    display: block;
-    /* Make the anchor fill the grid cell */
-}
-
-.thumbnail {
+.sub-container1 {
+    background-image: url(../image/seulgi.jpg);
     min-height: 300px;
     width: 100%;
     background-size: cover;
+    margin-bottom: 20px;
+}
+
+.sub-container2 {
+    background-image: url(../image/yeri.jpg);
+    min-height: 300px;
+    width: 100%;
+    background-size: cover;
+}
+
+.container2 {
+    background-image: url(../image/wendy.jpg);
+    min-height: 600px;
+    width: 33.3%;
+    background-size: cover;
     background-position: center;
-    cursor: pointer;
-    /* Indicate it's clickable */
-    transition: opacity 0.3s ease-in-out;
 }
 
-.thumbnail:hover {
-    opacity: 0.8;
+.container3 {
+    min-height: 600px;
+    width: 33.3%;
 }
 
-.lightbox {
-    position: fixed;
-    /* Stay in place when scrolling */
-    top: 0;
-    left: 0;
+.sub-container4 {
+    background-image: url(../image/joy.jpg);
+    min-height: 300px;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Dark semi-transparent background */
-    display: none;
-    /* Initially hidden */
-    justify-content: center;
-    /* Center content horizontally */
-    align-items: center;
-    /* Center content vertically */
-    z-index: 1000;
-    /* Ensure it's on top of everything */
+    background-size: cover;
+    margin-bottom: 20px;
 }
 
-.lightbox.active {
-    display: flex;
-    /* Show the lightbox */
-}
-
-.lightbox-image {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-    /* Make sure the whole image is visible */
-}
-
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.close-button:hover {
-    opacity: 1;
-}
-
-.lightbox-controls {
-    position: absolute;
-    bottom: 20px;
+.sub-container5 {
+    background-image: url(../image/irene.jpg);
+    min-height: 300px;
     width: 100%;
-    text-align: center;
-}
+    background-size: cover;
 
-.lightbox-controls button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    margin: 0 20px;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.lightbox-controls button:hover {
-    opacity: 1;
 }
 
 

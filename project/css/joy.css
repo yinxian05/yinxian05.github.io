@@ -28,7 +28,7 @@ body {
 }
 
 .sub-container1 {
-    background-image: url(../image/joy1.png);
+    background-image: url(../image/joy1.jpg);
     min-height: 500px;
     width: 100%;
     background-size: cover;
@@ -37,7 +37,7 @@ body {
 }
 
 .sub-container2 {
-    background-image: url(../image/joy5.png);
+    background-image: url(../image/joy5.jpg);
     min-height: 500px;
     width: 100%;
     background-size: cover;
@@ -50,7 +50,7 @@ body {
 }
 
 .sub-container3 {
-    background-image: url(../image/joy2.png);
+    background-image: url(../image/joy2.jpg);
     min-height: 500px;
     width: 100%;
     background-size: cover;
@@ -59,7 +59,7 @@ body {
 }
 
 .sub-container4 {
-    background-image: url(../image/joy4.png);
+    background-image: url(../image/joy4.jpg);
     min-height: 500px;
     width: 100%;
     background-size: cover;
@@ -72,7 +72,7 @@ body {
 }
 
 .sub-container5 {
-    background-image: url(../image/joy3.png);
+    background-image: url(../image/joy3.jpg);
     width: 100%;
     min-height: 500px;
     background-size: cover;
@@ -81,7 +81,7 @@ body {
 }
 
 .sub-container6 {
-    background-image: url(../image/joy6.png);
+    background-image: url(../image/joy6.jpg);
     width: 100%;
     min-height: 500px;
     background-size: cover;

@@ -28,7 +28,7 @@ body {
 }
 
 .sub-container1 {
-    background-image: url(../image/yeri1.png);
+    background-image: url(../image/yeri1.jpg);
     min-height: 500px;
     width: 100%;
     background-size: cover;
@@ -44,7 +44,7 @@ body {
 }
 
 .sub-container2 {
-    background-image: url(../image/yeri2.png);
+    background-image: url(../image/yeri2.jpg);
     min-height: 500px;
     width: 50%;
     background-size: cover;
@@ -52,7 +52,7 @@ body {
 }
 
 .sub-container3 {
-    background-image: url(../image/yeri3.png);
+    background-image: url(../image/yeri3.jpg);
     min-height: 500px;
     width: 50%;
     background-size: cover;
@@ -67,7 +67,7 @@ body {
 }
 
 .sub-container4 {
-    background-image: url(../image/yeri4.png);
+    background-image: url(../image/yeri4.jpg);
     min-height: 500px;
     width: 100%;
     background-size: cover;
@@ -76,7 +76,7 @@ body {
 }
 
 .sub-container5 {
-    background-image: url(../image/yeri5.png);
+    background-image: url(../image/yeri5.jpg);
     width: 100%;
     min-height: 500px;
     background-size: cover;

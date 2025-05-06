@@ -23,7 +23,7 @@ body {
 }
 
 .container1 {
-    background-image: url(../image/seulgi1.png);
+    background-image: url(../image/seulgi1.jpg);
     min-height: 700px;
     width: 33.3%;
     background-size: cover;
@@ -39,7 +39,7 @@ body {
 }
 
 .sub-container1 {
-    background-image: url(../image/seulgi2.png);
+    background-image: url(../image/seulgi2.jpg);
     min-height: 350px;
     width: 100%;
     background-size: cover;
@@ -47,7 +47,7 @@ body {
 }
 
 .sub-container2 {
-    background-image: url(../image/seulgi3.png);
+    background-image: url(../image/seulgi3.jpg);
     min-height: 350px;
     width: 100%;
     background-size: cover;
@@ -55,7 +55,7 @@ body {
 }
 
 .container3 {
-    background-image: url(../image/seulgi4.png);
+    background-image: url(../image/seulgi4.jpg);
     min-height: 700px;
     width: 33.3%;
     background-size: cover;

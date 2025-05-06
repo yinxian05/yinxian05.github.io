@@ -53,7 +53,7 @@ body {
 }
 
 .chill-kill-image {
-    width: 50%;
+    width: 40%;
     position: relative;
     cursor: pointer;
 }
@@ -95,7 +95,7 @@ body {
 }
 
 .chill-kill-text {
-    width: 50%;
+    width: 60%;
     font-family: "Red Hat Display", sans-serif;
     color: #ffffff;
     justify-content: left;
@@ -236,119 +236,145 @@ body {
     .tracklist h2 {
         margin-top: -5px;
         margin-bottom: -14px;
-
-    }
-}
-
-@media screen and (max-width: 1053px) {
-
-    .chill-kill {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 
-    .chill-kill-image {
-        width: 75%;
+    .chill-kill-text h1 {
+        font-size: 56px;
     }
 
-    .container {
-        gap: 50px 0;
+    .chill-kill-text h2 {
+        font-size: 22px;
     }
 
-    .container3 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 20px;
-        padding: 20px 40px;
-        margin-bottom: 20px;
+    .chill-kill-text p {
+        font-size: 20px;
     }
 
-    .container3 .music-item {
-        width: 56%;
+    @media screen and (max-width: 1053px) {
+
+        .chill-kill {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .chill-kill-image {
+            width: 75%;
+        }
+
+        .container {
+            gap: 50px 0;
+        }
+
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 20px 40px;
+            margin-bottom: 20px;
+        }
+
+        .container3 .music-item {
+            width: 56%;
+        }
+
+        .tracklist {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 440px;
+        }
     }
 
-    .tracklist {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 440px;
-    }
-}
+    @media screen and (max-width: 1052px) {
 
-@media screen and (max-width: 1052px) {
+        .chill-kill {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
-    .chill-kill {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+        .chill-kill-image {
+            width: 75%;
+        }
 
-    .chill-kill-image {
-        width: 75%;
-    }
+        .container {
+            gap: 50px 0;
+        }
 
-    .container {
-        gap: 50px 0;
-    }
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 20px 40px;
+            margin-bottom: 20px;
+        }
 
-    .container3 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 20px;
-        padding: 20px 40px;
-        margin-bottom: 20px;
-    }
+        .container3 .music-item {
+            width: 40%;
+        }
 
-    .container3 .music-item {
-        width: 40%;
-    }
-
-    .tracklist {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 325px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .chill-kill {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        flex-wrap: wrap;
+        .tracklist {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 325px;
+        }
     }
 
-    .chill-kill-image {
-        width: 95%;
-    }
+    @media screen and (max-width: 768px) {
 
-    .chill-kill-text {
-        width: 95%;
-        margin-top: 20px;
-        text-align: center;
-    }
+        .chill-kill {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 0;
+            margin-bottom: 30px;
+        }
 
-    .container3 {
-        gap: 50px 0;
-        padding: 50px;
-    }
+        .chill-kill-image {
+            width: 100%;
+        }
 
-    .container3 .music-item {
-        width: 56%;
-    }
+        .chill-kill-text {
+            width: 100%;
+            text-align: center;
+        }
 
-    .tracklist {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 380px;
+        .container3 {
+            display: none;
+            gap: 50px 0;
+            padding: 50px;
+        }
+
+        .container3 .music-item {
+            width: 56%;
+        }
+
+        .tracklist {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 380px;
+        }
+
+        .container-music {
+            margin: 120px;
+            margin-top: 0;
+        }
+
+        .tracklist {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 495px;
+        }
+
     }
-}

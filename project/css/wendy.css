@@ -24,7 +24,7 @@ body {
 }
 
 .container1 {
-    background-image: url(../image/wendy1.png);
+    background-image: url(../image/wendy1.jpg);
     min-height: 700px;
     width: 33.3%;
     background-size: cover;
@@ -40,7 +40,7 @@ body {
 }
 
 .sub-container1 {
-    background-image: url(../image/wendy2.png);
+    background-image: url(../image/wendy2.jpg);
     min-height: 350px;
     width: 100%;
     background-size: cover;
@@ -48,7 +48,7 @@ body {
 }
 
 .sub-container2 {
-    background-image: url(../image/wendy3.png);
+    background-image: url(../image/wendy3.jpg);
     min-height: 350px;
     width: 100%;
     background-size: cover;

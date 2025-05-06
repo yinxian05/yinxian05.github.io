@@ -132,6 +132,7 @@ body {
         flex-basis: 100%;
         box-sizing: border-box;
         aspect-ratio: 16 / 9;
+        flex-wrap: wrap;
     }
 
     .container2 h1,
