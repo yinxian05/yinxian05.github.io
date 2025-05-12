@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/seulgi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/lightbox.css">
+
 </head>
 
 <body>
@@ -48,12 +51,19 @@
             <h1>SEULGI</h1>
         </div>
         <div class="image">
-            <div class="container1"></div>
+            <div class="container1"><a class="example-image-link" href="image/seulgi1.jpg" data-lightbox="cover"
+                    style="width:100%;min-height:700px;display:block"></a></div>
             <div class="container2">
-                <div class="sub-container1"></div>
-                <div class="sub-container2"></div>
+                <div class="sub-container1"><a class="example-image-link" href="image/seulgi2.jpg" data-lightbox="cover"
+                        style="width:100%;min-height:350px;display:block"></a></div>
+
+                <div class="sub-container2">
+                    <a class="example-image-link" href="image/seulgi3.jpg" data-lightbox="cover"
+                        style="width:100%;min-height:350px;display:block"></a>
+                </div>
             </div>
-            <div class="container3"></div>
+            <div class="container3"><a class="example-image-link" href="image/seulgi4.jpg" data-lightbox="cover"
+                    style="width:100%;min-height:350px;display:block"></a></div>
         </div>
     </div>
 
@@ -125,6 +135,8 @@
             }
         });
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 
 </html>
