@@ -34,6 +34,13 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container1:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .sub-container2 {
@@ -42,6 +49,13 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container2:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .container2 {
@@ -56,6 +70,13 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container3:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .sub-container4 {
@@ -64,6 +85,13 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container4:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .container3 {
@@ -78,6 +106,13 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container5:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .sub-container6 {
@@ -86,6 +121,13 @@ body {
     min-height: 500px;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container6:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

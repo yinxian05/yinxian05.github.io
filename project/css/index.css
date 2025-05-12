@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .intro {
@@ -143,7 +144,15 @@ body {
     width: 100%;
     max-width: 320px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.album1 img:hover,
+.album2 img:hover,
+.album3 img:hover {
+    transform: rotateY(15deg);
+    cursor: pointer;
 }
 
 .album1 .info,
@@ -328,12 +337,13 @@ body {
     background-size: cover;
     margin-bottom: 20px;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
 }
 
-.sub-container1-light {
-    min-height: 300px;
-    width: 100%;
-    display: block;
+.sub-container1:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .sub-container2 {
@@ -342,6 +352,13 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container2:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .container2 {
@@ -350,6 +367,13 @@ body {
     width: 33.3%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.container2:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .container3 {
@@ -364,6 +388,13 @@ body {
     background-size: cover;
     margin-bottom: 20px;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container4:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .sub-container5 {
@@ -372,7 +403,13 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
 
+.sub-container5:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1268px) {

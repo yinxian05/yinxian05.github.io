@@ -131,9 +131,18 @@ body {
     margin-top: 20px;
 }
 
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
 .footer-social img {
     width: 40px;
-    padding: 0 5px;
+    cursor: pointer;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
     cursor: pointer;
 }
 

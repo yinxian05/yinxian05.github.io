@@ -33,12 +33,14 @@
     width: 50%;
     display: flex;
     justify-content: right;
+    perspective: 800px;
 }
 
 .seulgi-img,
 .joy-img {
     width: 50%;
     justify-content: left;
+    perspective: 800px;
 }
 
 .irene-img img,
@@ -47,6 +49,18 @@
 .joy-img img,
 .yeri-img img {
     width: 70%;
+    transition: transform 0.6s ease-in-out;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.irene-img img:hover,
+.seulgi-img img:hover,
+.wendy-img img:hover,
+.joy-img img:hover,
+.yeri-img img:hover {
+    transform: rotateY(360deg);
+    cursor: pointer;
 }
 
 .irene-text,
@@ -70,6 +84,7 @@
     font-family: 'Perandory', sans-serif;
     color: #C40000;
     margin-bottom: -35px;
+
 }
 
 .seulgi-text h1,
@@ -82,6 +97,18 @@
     margin-bottom: -35px;
 }
 
+.irene-text h1:hover,
+.seulgi-text h1:hover,
+.wendy-text h1:hover,
+.joy-text h1:hover,
+.yeri-text h1:hover {
+    opacity: 1;
+    transform: translateY(-4.5px);
+    /* Move up slightly */
+    cursor: pointer;
+}
+
+
 .irene-text h5,
 .seulgi-text h5,
 .wendy-text h5,
@@ -93,6 +120,19 @@
     font-weight: 500;
     letter-spacing: 0.2px;
     margin-bottom: 20px;
+    opacity: 0.8;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.irene-text h5:hover,
+.seulgi-text h5:hover,
+.wendy-text h5:hover,
+.joy-text h5:hover,
+.yeri-text h5:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    cursor: pointer;
 }
 
 
@@ -322,6 +362,8 @@
         width: 50%;
         justify-content: center;
         margin-bottom: -90px;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: center;
     }
 
     .seulgi-img,
@@ -329,6 +371,8 @@
         width: 50%;
         justify-content: center;
         margin-bottom: -90px;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: center;
     }
 
     .irene-img img,
@@ -337,6 +381,8 @@
     .joy-img img,
     .yeri-img img {
         width: 100%;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: center;
     }
 
     .irene-text,

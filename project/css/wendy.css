@@ -29,6 +29,13 @@ body {
     width: 33.3%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.container1:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .container2 {
@@ -45,6 +52,13 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container1:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .sub-container2 {
@@ -53,6 +67,13 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container2:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

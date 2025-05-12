@@ -34,6 +34,13 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container1:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .down {
@@ -49,6 +56,13 @@ body {
     width: 50%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container2:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .sub-container3 {
@@ -57,7 +71,13 @@ body {
     width: 50%;
     background-size: cover;
     background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
 
+.sub-container3:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .container2 {
@@ -73,6 +93,13 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.sub-container4:hover {
+    transform: scale(0.95);
+    cursor: pointer;
 }
 
 .sub-container5 {
@@ -81,9 +108,14 @@ body {
     min-height: 500px;
     background-size: cover;
     background-position: center;
-
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
 }
 
+.sub-container5:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
 

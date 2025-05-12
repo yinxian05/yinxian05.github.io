@@ -510,12 +510,21 @@
             </div>
         </div>
     </div>
+
     <div class="footer">
         <div class="footer-social">
-            <img src="image/youtube.jpg" alt="Youtube">
-            <img src="image/instagram.jpg" alt="Instagram">
-            <img src="image/spotify.jpg" alt="Spotify">
-            <img src="image/twitter.jpg" alt="Twitter">
+            <a href="https://www.youtube.com/@redvelvet" target="_blank">
+                <img src="image/youtube.jpg" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/redvelvet.smtown/" target="_blank">
+                <img src="image/instagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM?si=nfGi5KChSIq-YLBjf55VBA" target="_blank">
+                <img src="image/spotify.jpg" alt="Spotify">
+            </a>
+            <a href="https://twitter.com/RVsmtown" target="_blank">
+                <img src="image/twitter.jpg" alt="Twitter">
+            </a>
         </div>
         <p>&copy; 2025 Red Velvet. All rights reserved.</p>
     </div>
@@ -537,6 +546,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $('.container-music').slick({
@@ -549,6 +559,99 @@
         });
 
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            const musicItems = gsap.utils.toArray(".music-item");
+            const chillKillSection = document.querySelector(".chill-kill");
+            const chillKillImage = document.querySelector(".chill-kill-image");
+            const chillKillText = document.querySelector(".chill-kill-text");
+
+            // ... (rest of your existing GSAP code for .music-item) ...
+
+            if (chillKillSection) {
+                gsap.to(chillKillSection, {
+                    scrollTrigger: {
+                        trigger: chillKillSection,
+                        start: "top center", // Animation starts when the top of the section hits the center of the viewport
+                        end: "bottom top",   // Animation ends when the bottom of the section hits the top of the viewport
+                        scrub: true,         // Smoothly animate based on scroll position
+                        // markers: true,    // For debugging
+                    },
+                    ease: "none"
+                });
+
+                gsap.from(chillKillImage, {
+                    scrollTrigger: {
+                        trigger: chillKillSection,
+                        start: "top center",
+                        end: "center center", // Animate while the image is roughly in the center
+                        scrub: true,
+                    },
+                    x: -5000, // Start from the left
+                    opacity: 0,
+                    scale: 0.9,
+                    duration: 10, // Optional duration (scrub overrides this in a way)
+                    ease: "power2.out"
+                });
+
+                gsap.from(chillKillText, {
+                    scrollTrigger: {
+                        trigger: chillKillSection,
+                        start: "top center",
+                        end: "center center",
+                        scrub: true,
+                    },
+                    y: 5000, // Start from the right
+                    opacity: 0,
+                    scale: 0.9,
+                    duration: 20, // Optional duration (scrub overrides this in a way)
+                    ease: "power2.out"
+                });
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            const musicItems = gsap.utils.toArray(".music-item");
+
+            musicItems.forEach(item => {
+                const imgContainer = item.querySelector(".image-container");
+                const img = item.querySelector("img");
+                const info = item.querySelector(".info");
+
+                gsap.to(item, {
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top center",
+                        end: "bottom center",
+                        scrub: true,
+                        toggleClass: { targets: item, className: "active" }
+                    },
+                    duration: 2,
+                    ease: "power2.out"
+                });
+
+                gsap.from(img, {
+                    x: -300,
+                    duration: 3
+                });
+
+                gsap.from(info, {
+                    x: -300,
+                    duration: 3
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
