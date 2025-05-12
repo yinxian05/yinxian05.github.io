@@ -89,6 +89,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+    .joy {
+        align-items: center;
+        text-align: center;
+        color: #740000;
+        padding: 10px 60px;
+    }
+
     .image {
         flex-direction: column;
         min-height: 1000px;
