@@ -176,7 +176,6 @@ body {
     background-color: #000000;
     color: #EAEAEA;
     text-align: center;
-    margin-top: -50px;
 }
 
 .videos h1 {
@@ -208,36 +207,34 @@ body {
     right: -100px;
 }
 
-.mv1 {
+.mv {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
     margin-top: 20px;
-    padding: 20px 140px;
-    color: #ffffff;
-    text-align: left;
     font-family: "Red Hat Display", sans-serif;
-    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+
 }
 
-.mv {
-    width: 33.3%;
+.mv1 {
+    flex-basis: 30%;
     box-sizing: border-box;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4/ 3;
+    align-items: center;
+    text-align: left;
 }
 
 .mv1 h1 {
     color: #ffffff;
-    text-align: left;
     font-family: "Red Hat Display", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .mv1 p {
     color: #ffffff;
-    text-align: left;
     font-family: "Red Hat Display", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .gallery {
@@ -332,6 +329,12 @@ body {
     margin-bottom: 20px;
 }
 
+.sub-container1-light {
+    min-height: 300px;
+    width: 100%;
+    display: block;
+}
+
 .sub-container2 {
     background-image: url(../image/yeri.jpg);
     min-height: 300px;
@@ -368,46 +371,46 @@ body {
 
 }
 
-
 @media screen and (max-width: 1268px) {
     .intro-text h2 {
-        font-size: 28px;
-        color: #FFD700;
-        font-family: 'DM Serif Display', serif;
-        font-weight: 100;
-        letter-spacing: 2px;
+        font-size: 24px;
     }
 
     .intro-text h1 {
-        font-size: 90px;
-        color: #C40000;
-        font-family: 'DM Serif Display', serif;
-        margin-top: -30px;
-        font-weight: normal;
+        font-size: 85px;
     }
 
     .intro-text p {
-        font-size: 18px;
-        font-family: 'Red Hat Display', sans-serif;
-        line-height: 1.8;
-        color: #EAEAEA;
-        margin-top: -50px;
-        margin-bottom: 30px;
+        font-size: 16px;
     }
 
     .button {
-        display: inline-block;
-        padding: 10px 60px;
-        color: #EAEAEA;
-        font-family: 'Red Hat Display', sans-serif;
-        font-size: 18px;
-        text-decoration: none;
-        border-radius: 25px;
-        border: #C40000 solid 2px;
-        text-decoration: none;
-        transition: all 0.3s ease;
+        font-size: 17px;
     }
 
+    @media screen and (max-width: 1245px) {
+        .intro-text h2 {
+            font-size: 24px;
+        }
+
+        .intro-text h1 {
+            font-size: 75px;
+        }
+
+        .intro-text p {
+            font-size: 15px;
+        }
+
+        .intro-image {
+            width: 60%;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 16px;
+        }
+
+    }
 
     @media screen and (max-width: 768px) {
 
