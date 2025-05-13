@@ -1,4 +1,3 @@
-
 const toggleButton = document.getElementById("menu-toggle");
 const menu = document.querySelector(".section"); // Target the element with the class 'section'
 
