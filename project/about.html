@@ -141,7 +141,9 @@
 
     <hr class="faq-separator">
 
-    <h2>Share Your Love for Red Velvet!</h2>
+    <div class="form">
+        <h2 id="text-anim">Share Your Love for Red Velvet!</h2>
+    </div>
     <form id="guestbookForm" method="POST" action="/submit-comment">
         <div>
             <label for="nickname">Nickname/Username:</label>
@@ -162,7 +164,9 @@
 
     <hr>
 
-    <h2>Recent Messages from ReVeluvs</h2>
+    <div class="messages">
+        <h2 id="text-anim-messages">Recent Messages from ReVeluvs</h2>
+    </div>
     <div id="commentsSection">
         <div class="comment">
             <div class="comment-header">
@@ -213,6 +217,47 @@
     </div>
 
     <script src="java/about.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            animation_text_1("#text-anim");
+        });
+
+        function animation_text_1(element) {
+            var newText = "";
+            var theText = document.querySelector(element);
+            for (i = 0; i < theText.innerText.length; i++) {
+                newText += "<div>";
+                if (theText.innerText[i] == " ") { newText += "&nbsp;" }
+                else { newText += theText.innerText[i]; }
+                newText += "</div>";
+            }
+            theText.innerHTML = newText;
+            var targetsDiv = document.querySelectorAll(element + " div");
+            TweenMax.staggerFromTo(targetsDiv, 2, { opacity: 0, y: 50, ease: Elastic.easeOut.config(1.2, 2) }, { opacity: 1, y: 0, ease: Elastic.easeOut.config(1.2, 1) }, 0.02);
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            animation_text_1("#text-anim-messages");
+        });
+
+        function animation_text_1(element) {
+            var newText = "";
+            var theText = document.querySelector(element);
+            for (i = 0; i < theText.innerText.length; i++) {
+                newText += "<div>";
+                if (theText.innerText[i] == " ") { newText += "&nbsp;" }
+                else { newText += theText.innerText[i]; }
+                newText += "</div>";
+            }
+            theText.innerHTML = newText;
+            var targetsDiv = document.querySelectorAll(element + " div");
+            TweenMax.staggerFromTo(targetsDiv, 2, { opacity: 0, y: 15, ease: Elastic.easeOut.config(1.2, 2) }, { opacity: 1, y: 0, ease: Elastic.easeOut.config(1.2, 1) }, 0.02);
+        }
+    </script>
 </body>
 
 </html>
