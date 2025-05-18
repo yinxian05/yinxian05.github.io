@@ -857,6 +857,15 @@ body {
             height: 100%;
         }
 
+        .mv1 {
+            position: relative;
+            width: 100%;
+            /* Make the iframe container fill the video-card */
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+
         .gallery h1::before,
         .gallery h1::after {
             width: 70px;
