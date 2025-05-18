@@ -298,6 +298,13 @@ body {
 
 @media screen and (max-width: 375px) {
 
+    .nav div {
+        font-size: 38px;
+        text-align: center;
+        letter-spacing: 3.5px;
+        margin-top: 8px;
+    }
+
     .footer-social img {
         width: 30px;
         padding: 0px;

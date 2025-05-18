@@ -457,6 +457,88 @@ body {
 
     }
 
+
+
+    @media screen and (max-width: 1300px) {
+
+        .music h1::before,
+        .music h1::after {
+            width: 380px;
+        }
+
+        .videos h1::before,
+        .videos h1::after {
+            width: 370px;
+        }
+
+        .videos h1::before {
+            left: -100px;
+        }
+
+        .videos h1::after {
+            right: -100px;
+        }
+
+        .gallery h1::before,
+        .gallery h1::after {
+            width: 340px;
+        }
+    }
+
+    @media screen and (max-width: 952px) {
+
+        .music h1::before,
+        .music h1::after {
+            width: 330px;
+        }
+
+        .videos h1::before,
+        .videos h1::after {
+            width: 320px;
+        }
+
+        .gallery h1::before,
+        .gallery h1::after {
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 830px) {
+
+        .music h1::before,
+        .music h1::after {
+            width: 300px;
+        }
+
+        .videos h1::before,
+        .videos h1::after {
+            width: 280px;
+        }
+
+        .gallery h1::before,
+        .gallery h1::after {
+            width: 250px;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+
+        .music h1::before,
+        .music h1::after {
+            width: 220px;
+        }
+
+        .videos h1::before,
+        .videos h1::after {
+            width: 220px;
+        }
+
+        .gallery h1::before,
+        .gallery h1::after {
+            width: 200px;
+        }
+    }
+
     @media screen and (max-width: 768px) {
 
         .intro {
@@ -661,86 +743,6 @@ body {
         }
     }
 
-    @media screen and (max-width: 1300px) {
-
-        .music h1::before,
-        .music h1::after {
-            width: 380px;
-        }
-
-        .videos h1::before,
-        .videos h1::after {
-            width: 370px;
-        }
-
-        .videos h1::before {
-            left: -100px;
-        }
-
-        .videos h1::after {
-            right: -100px;
-        }
-
-        .gallery h1::before,
-        .gallery h1::after {
-            width: 340px;
-        }
-    }
-
-    @media screen and (max-width: 952px) {
-
-        .music h1::before,
-        .music h1::after {
-            width: 330px;
-        }
-
-        .videos h1::before,
-        .videos h1::after {
-            width: 320px;
-        }
-
-        .gallery h1::before,
-        .gallery h1::after {
-            width: 300px;
-        }
-    }
-
-    @media screen and (max-width: 830px) {
-
-        .music h1::before,
-        .music h1::after {
-            width: 300px;
-        }
-
-        .videos h1::before,
-        .videos h1::after {
-            width: 280px;
-        }
-
-        .gallery h1::before,
-        .gallery h1::after {
-            width: 250px;
-        }
-    }
-
-    @media screen and (max-width: 720px) {
-
-        .music h1::before,
-        .music h1::after {
-            width: 220px;
-        }
-
-        .videos h1::before,
-        .videos h1::after {
-            width: 220px;
-        }
-
-        .gallery h1::before,
-        .gallery h1::after {
-            width: 200px;
-        }
-    }
-
     @media screen and (max-width: 648px) {
 
         .music h1::before,
@@ -776,4 +778,51 @@ body {
             width: 100px;
         }
     }
-}
+
+
+    @media screen and (max-width: 375px) {
+        .intro {
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 30px;
+            background-color: #000000;
+            margin-bottom: 50px;
+        }
+
+        .intro-text {
+            width: 100%;
+            text-align: center;
+        }
+
+        .intro-image {
+            width: 100%;
+            text-align: center;
+        }
+
+        .intro-image img {
+            width: 100%;
+            margin-top: -30px;
+            margin-bottom: 20px;
+        }
+
+        .music h1::before,
+        .music h1::after {
+            width: 100px;
+        }
+
+        .videos h1::before,
+        .videos h1::after {
+            width: 100px;
+        }
+
+        .gallery h1::before,
+        .gallery h1::after {
+            width: 80px;
+        }
+
+        .gallery {
+            padding: 10px 15px;
+            margin-bottom: 30px;
+        }
+    }

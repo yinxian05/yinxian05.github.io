@@ -383,3 +383,11 @@ body {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+    .container2 {
+        padding: 20px 30px;
+        margin-bottom: 10px;
+    }
+}
