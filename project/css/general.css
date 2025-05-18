@@ -295,3 +295,20 @@ body {
         letter-spacing: 1.2px;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+    .footer-social img {
+        width: 30px;
+        padding: 0px;
+        cursor: pointer;
+    }
+
+    .footer p {
+        font-family: 'Red Hat Display', sans-serif;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}

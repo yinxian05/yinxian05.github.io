@@ -234,7 +234,11 @@ body {
     text-align: left;
 }
 
-.mv1 h1 {
+.text {
+    margin-top: ;
+}
+
+.mv1 h3 {
     color: #ffffff;
     font-family: "Red Hat Display", sans-serif;
     font-size: 15px;
