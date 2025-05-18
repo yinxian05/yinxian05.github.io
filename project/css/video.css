@@ -93,7 +93,7 @@ body {
 }
 
 .behind-the-scenes .video-card {
-    width: calc(50% - 20px);
+    width: calc(33.5% - 20px);
     /* Try for two video cards per row */
     box-sizing: border-box;
     /* Ensure padding and border are included in the width */
@@ -182,26 +182,32 @@ body {
     .performance-stages,
     .behind-the-scenes {
         display: flex;
-        flex-direction: column;
+        /* Enable flex layout for the video cards */
         flex-wrap: wrap;
+        /* Allow video cards to wrap to the next line */
         gap: 20px;
-        align-items: center;
         margin-top: 20px;
-        padding: 20px 5px;
+        padding: 20px 140px;
         color: #ffffff;
         text-align: left;
         font-family: "Red Hat Display", sans-serif;
+    }
+
+    .video-card {
+        /* Define a width for each video card, so they try to fit in a row */
+        /* You might need to adjust this percentage based on how many you want per row */
+        width: calc(100% - 20px * 2 / 3);
+        /* Roughly 3 per row with the gap */
     }
 
     .mv,
     .performance,
     .bts {
         position: relative;
-        padding-bottom: 56.25%;
-        /* 16:9 */
-        height: 0;
+        width: 100%;
+        /* Make the iframe container fill the video-card */
+        aspect-ratio: 16 / 9;
         overflow: hidden;
-        max-width: 100%;
     }
 
     .mv iframe,
@@ -213,6 +219,138 @@ body {
         width: 100%;
         height: 100%;
     }
+
+    .behind-the-scenes .video-card {
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+    }
+
+    .behind-the-scenes .mv,
+    .behind-the-scenes .bts {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+    }
+
+    .behind-the-scenes .mv iframe,
+    .behind-the-scenes .bts iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .text h1 {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 20px;
+    }
+
+    .text p {
+        color: #ffffff;
+        text-align: left;
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    // This is for my mobile size
+
+    .line-container {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .line1 {
+        background-color: red;
+        height: 1px;
+        flex: 1;
+        margin-right: 25px;
+    }
+
+    .text h1 {
+        margin: 0;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Red Hat Display", sans-serif;
+    }
+
+    .line2 {
+        background-color: red;
+        height: 1px;
+        flex: 4;
+        opacity: 0;
+        margin-left: 10px;
+    }
+
+    .container2,
+    .performance-stages,
+    .behind-the-scenes {
+        display: flex;
+        /* Enable flex layout for the video cards */
+        flex-wrap: wrap;
+        /* Allow video cards to wrap to the next line */
+        gap: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+        text-align: left;
+        font-family: "Red Hat Display", sans-serif;
+    }
+
+    .video-card {
+        width: none;
+    }
+
+    .mv,
+    .performance,
+    .bts {
+        position: relative;
+        width: 100%;
+        /* Make the iframe container fill the video-card */
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+    }
+
+    .mv iframe,
+    .performance iframe,
+    .bts iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .behind-the-scenes .video-card {
+        width: none;
+    }
+
+    .behind-the-scenes .mv,
+    .behind-the-scenes .bts {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+    }
+
+    .behind-the-scenes .mv iframe,
+    .behind-the-scenes .bts iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
 
     .text h1 {
         color: #ffffff;
