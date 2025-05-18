@@ -118,3 +118,12 @@
         position: relative;
         display: block;
     }
+}
+
+@media screen and (max-width: 375px) {
+
+    .slick-slider {
+        position: relative;
+        display: block;
+    }
+}

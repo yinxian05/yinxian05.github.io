@@ -392,7 +392,8 @@ body {
     }
 
     .container-music {
-        margin: 300px;
+        width: 170px;
         margin-top: 0;
+
     }
 }
