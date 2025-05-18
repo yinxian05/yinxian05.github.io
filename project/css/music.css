@@ -390,4 +390,9 @@ body {
         padding: 20px 30px;
         margin-bottom: 10px;
     }
+
+    .container-music {
+        margin: 300px;
+        margin-top: 0;
+    }
 }

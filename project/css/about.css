@@ -32,7 +32,7 @@ body {
 }
 
 .faq-question {
-    width: 100%;
+    width: 70%;
     padding: 15px;
     text-align: left;
     font-size: 18px;
@@ -49,6 +49,7 @@ body {
 }
 
 .faq-answer {
+    width: 66.8%;
     flex-wrap: wrap;
     max-height: 0;
     padding: 0 15px;
@@ -312,5 +313,17 @@ body {
 
     .faq-answer p {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .form h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 36px;
+    }
+
+    .messages h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 33px;
     }
 }

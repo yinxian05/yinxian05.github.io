@@ -259,7 +259,7 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-    // This is for my mobile size
+    /* This is for my mobile size */
 
     .line-container {
         background-color: black;
@@ -301,13 +301,17 @@ body {
         /* Allow video cards to wrap to the next line */
         gap: 20px;
         margin-top: 20px;
+        padding: 20px 20px;
         color: #ffffff;
         text-align: left;
         font-family: "Red Hat Display", sans-serif;
     }
 
     .video-card {
-        width: none;
+        /* Define a width for each video card, so they try to fit in a row */
+        /* You might need to adjust this percentage based on how many you want per row */
+        width: calc(100% - 20px);
+        /* Roughly 3 per row with the gap */
     }
 
     .mv,
@@ -330,11 +334,26 @@ body {
         height: 100%;
     }
 
+    .behind-the-scenes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 20px 20px;
+        color: #ffffff;
+        text-align: left;
+        font-family: "Red Hat Display", sans-serif;
+    }
+
     .behind-the-scenes .video-card {
-        width: none;
+        width: calc(100% - 20px);
+        /* Try for two video cards per row */
+        box-sizing: border-box;
+        /* Ensure padding and border are included in the width */
     }
 
     .behind-the-scenes .mv,
+    /* Targeting the video iframe container within .behind-the-scenes */
     .behind-the-scenes .bts {
         position: relative;
         width: 100%;
@@ -350,19 +369,3 @@ body {
         width: 100%;
         height: 100%;
     }
-
-
-    .text h1 {
-        color: #ffffff;
-        text-align: left;
-        font-family: "Red Hat Display", sans-serif;
-        font-size: 20px;
-    }
-
-    .text p {
-        color: #ffffff;
-        text-align: left;
-        font-family: "Red Hat Display", sans-serif;
-        font-size: 14px;
-    }
-}
